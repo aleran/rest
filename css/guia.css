@@ -1,0 +1,49 @@
+.DatosGuia{
+	text-align: justify;
+}
+.ImgGuia{
+	border: 1px solid silver;
+	border-radius: 5px;
+	width: 100%;
+}
+.ImgGuiaSmall{
+	width: 8%;
+}
+.ImgGuiaMedium{
+	width: 20%;
+}
+.ImgGuiaSmallSuper{
+	width: 50px;
+}
+h5{
+	font-size: 18px;
+}
+
+.guia-index{
+list-style: none;
+margin-left:25px;
+padding-left: 1em;
+text-indent: 0em;
+padding-top:1px;
+padding-bottom:1px;
+}
+.guia-index li:before{
+content: "\00BB \0020";
+}
+.guia-index li{
+	border:1px solid silver;
+	border-radius:5px;
+	padding:4px;
+	color:#004276;
+	font-weight:bold;
+	cursor:pointer;
+	margin: 2px 5px 2px -15px;
+}
+.guia-index li:hover{
+	color:black;
+	border-color: black;
+	box-shadow: 2px 2px 2px silver;
+}
+.guia-index li a{
+	text-decoration: none;
+}

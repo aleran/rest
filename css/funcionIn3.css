@@ -1,0 +1,14 @@
+.tabla-inventarioac{
+	border:1px solid silver;
+	border-radius:5px;
+}
+.tabla-inventarioac td{
+	border:1px solid silver;
+	padding:4px;
+}
+.tabla-inventarioac th{
+	padding:4px;
+}
+.sizetas{
+	width:40px;
+}

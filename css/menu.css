@@ -1,0 +1,82 @@
+.menu-principal{
+background:linear-gradient(#0279C0,#009DE0);
+/*
+background-color:#0279C0;
+*/
+color:#004276;
+font-weight:bold;
+border-radius:5px;
+}
+.menu-principal{
+list-style: none;
+margin-left:25px;
+padding-left: 1em;
+text-indent: 0em;
+padding-top:1px;
+padding-bottom:1px;
+}
+.menu-principal li:before{
+content: "\00BB \0020";
+}
+.menu-principal li{
+margin-top:5px;
+margin-bottom:5px;
+padding-top:7px;
+padding-bottom:7px;
+border-top-left-radius:5px;
+border-bottom-left-radius:5px;
+font-size:80%;
+}
+
+@keyframes ani-unselected{
+    from {background-color: #EEE;
+		  color:#004276;
+		  margin-left:0px;
+		  }
+    to {background-color: #004276;
+		color:white;
+		margin-left:-14px;
+		}
+}
+
+.menu-principal li.unselected{
+border:1px solid #EEE;
+background-color:#EEE;
+margin-right:4px;
+cursor:pointer;
+}
+.menu-principal li.unselected:hover{
+margin-left:-14px;
+color:white;
+background-color:#004276;
+animation-name: ani-unselected;
+animation-duration: 0.5s;
+}
+.menu-principal li.selected{
+margin-left:-14px;
+border-top:1px solid white;
+border-left:1px solid white;
+border-bottom:1px solid white;
+background-color:white;
+margin-right:0;
+color:#0279C0;
+cursor:default;
+}
+.menu-principal li.selected:hover{
+color:black;
+}
+div.opcion{
+width:98%;
+height:98%;
+display:none;
+position: sticky;
+z-index: 1;
+}
+.tabFp li{
+font-size:14px;
+}
+.cont-op{
+	/*height: 100%;*/
+	/*max-height: 380px;*/
+	/*overflow: auto;*/
+}
