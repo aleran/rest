@@ -9,7 +9,7 @@
 			echo $titulo;
 		?>
 	</title>
-	<link rel="shortcut icon" href="./img/icon.png" type="image/ico"/>
+	<link rel="shortcut icon" href="./img/favicon.ico" type="image/ico"/>
 	<link rel="stylesheet" href="css/jquery-ui-tema.css"/>
 	<link rel="stylesheet" href="css/tema.css"/>
 	<link rel="stylesheet" href="css/index.css"/>

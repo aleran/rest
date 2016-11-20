@@ -17,7 +17,7 @@ while($DataROW01 = mysql_fetch_array($DataSQL01) and $i<10){
 	$FechaIngreso = funcion04($DataROW01["FechaIngreso"]);
 	$class="";
 	if($Date==$DataROW01["FechaCaducidad"]){
-		$class="style='background-color:#0279C0;color:white;font-weight:bold'";
+		$class="style='background-color:#FF8015;color:white;font-weight:bold'";
 	}
 	$Data01.="<tr $class class='lotes' data='$DataROW01[Lote]' ><td>$DataROW01[Lote]</td><td>$DataROW01[Cantidad] $DataROW01[Tipo]</td><td>$FechaIngreso</td><td>$FechaCaducidad</td></tr>";
 	$i++;

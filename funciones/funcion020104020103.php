@@ -63,7 +63,7 @@ border-radius:50px;
 cursor:pointer;
 }
 .BackMenu:hover{
-border:2px solid #0279C0;
+border:2px solid #FF8015;
 background:linear-gradient(white,silver);
 }
 .OpcionesDeMenu{
@@ -83,7 +83,7 @@ border:1px solid silver;
 border-radius:5px;
 background:linear-gradient(white,#f0f0f0);
 padding:4px;
-color:#004276;
+color:#FF841B;
 font-weight:bold;
 cursor:pointer;
 margin: 5px 5px 5px -15px;
@@ -95,6 +95,6 @@ color:black;
 #categorias{
 border:1px solid silver;
 color:white;
-background: linear-gradient(#008DDF,#0279C0);
+background: linear-gradient(#FF8015,#FF841B);
 }
 </style>

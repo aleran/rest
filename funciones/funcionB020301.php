@@ -19,7 +19,7 @@ onkeypress=\"return permitemecarac(event, 'esp','#NewNombreRol', 'Rol')\" onKeyU
 ";
 $c=0;
 while($DataROW02 = mysql_fetch_array($DataSQL02)){
-	echo "<tr><td style='border:1px solid silver;color:white;background:#0279C0;width:90%'><b>$DataROW02[NombreModulo]</b></td>
+	echo "<tr><td style='border:1px solid silver;color:white;background:#FF8015;width:90%'><b>$DataROW02[NombreModulo]</b></td>
 	<td>";
 	echo "<div class='switch'>
 		<input id='cmn-toggle-$c' name='$DataROW02[id]' class='cmn-toggle cmn-toggle-round-flat cm-toggle-all' type='checkbox' >
@@ -60,7 +60,7 @@ while($DataROW02 = mysql_fetch_array($DataSQL02)){
 			$ci++;
 		}
 		echo "</table>";
-	echo "</td></tr><tr><td colspan='2'><hr style='background-color:#0279C0'></td></tr>";
+	echo "</td></tr><tr><td colspan='2'><hr style='background-color:#FF8015'></td></tr>";
 	$c++;
 }
 echo "</table></form>";

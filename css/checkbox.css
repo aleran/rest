@@ -66,9 +66,9 @@ input.cmn-toggle-round-flat + label:after {
   transition: margin 0.4s, background 0.4s;
 }
 input.cmn-toggle-round-flat:checked + label {
-  background-color: #0279C0;
+  background-color: #FF8015;
 }
 input.cmn-toggle-round-flat:checked + label:after {
   margin-left: 20px;
-  background-color: #0279C0;
+  background-color: #FF8015;
 }

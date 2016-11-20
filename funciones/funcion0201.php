@@ -15,7 +15,7 @@ border:2px solid silver;
 border-radius:5px;
 }
 .Mesas td:hover{
-border:2px solid #0279C0;
+border:2px solid #FF8015;
 }
 .Mesas td:active{
 border:2px solid #c00;

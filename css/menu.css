@@ -1,9 +1,9 @@
 .menu-principal{
-background:linear-gradient(#0279C0,#009DE0);
+background:linear-gradient(#FF8015,#FF841B);
 /*
-background-color:#0279C0;
+background-color:#FF8015;
 */
-color:#004276;
+color:black;
 font-weight:bold;
 border-radius:5px;
 }
@@ -30,10 +30,10 @@ font-size:80%;
 
 @keyframes ani-unselected{
     from {background-color: #EEE;
-		  color:#004276;
+		  color:#FF841B;
 		  margin-left:0px;
 		  }
-    to {background-color: #004276;
+    to {background-color: #FF841B;
 		color:white;
 		margin-left:-14px;
 		}
@@ -48,7 +48,7 @@ cursor:pointer;
 .menu-principal li.unselected:hover{
 margin-left:-14px;
 color:white;
-background-color:#004276;
+background-color:#FF841B;
 animation-name: ani-unselected;
 animation-duration: 0.5s;
 }
@@ -59,7 +59,7 @@ border-left:1px solid white;
 border-bottom:1px solid white;
 background-color:white;
 margin-right:0;
-color:#0279C0;
+color:#FF8015;
 cursor:default;
 }
 .menu-principal li.selected:hover{

@@ -17,7 +17,7 @@ funcion00();
 	padding:6px;
 }
 .VerProducto:hover{
-	background-color:#0279C0;
+	background-color:#FF8015;
 	color:white;
 	cursor:pointer;
 }
@@ -55,7 +55,7 @@ funcion00();
 			$FechaCaducidad = funcion0401($DataROW01["FechaCaducidad"]);
 			$class="";
 			if($Date==$DataROW01["FechaCaducidad"]){
-				$class="style='background-color:#0279C0;color:white;font-weight:bold'";
+				$class="style='background-color:#FF8015;color:white;font-weight:bold'";
 			}
 			$Data01="<td $class >$FechaCaducidad</td>";
 			$i++;

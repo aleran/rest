@@ -19,7 +19,7 @@ border:1px solid silver;
 border-radius:5px;
 background:linear-gradient(white,#f0f0f0);
 padding:4px;
-color:#004276;
+color:#FF841B;
 font-weight:bold;
 cursor:pointer;
 margin: 5px 5px 5px -15px;

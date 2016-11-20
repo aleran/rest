@@ -89,7 +89,7 @@ $(".button-close").click(function(){
 }
 .header-content{
 	width: 99%;
-	background-color: #0279C0;
+	background-color: #FF8015;
 	color: white;
 	padding: 5px;
 	border-radius: 5px;

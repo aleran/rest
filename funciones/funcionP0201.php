@@ -223,7 +223,7 @@ $(".OrdenBorradaUser").click(function(){
 	padding: 6px;
 }
 .Ordenes thead, .OrdenesBorradas thead{
-	background-color: #0279C0;
+	background-color: #FF8015;
 	color: white;
 }
 .Ordenes thead th, .OrdenesBorradas thead th{

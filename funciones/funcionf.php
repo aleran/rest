@@ -15,7 +15,7 @@ $DataROW01 = mysql_fetch_array($DataSQL01);
 echo "
 <table>
 <tr><td><b>Código:</b> $DataROW00[CodigoTbr]</td><td><b>Usuario:</b> $DataROW00[Usuario]</td><td><b>Rol de Usuario:</b> $DataROW01[NombreRol]</td></tr>
-<tr><td><b>Cédula:</b> $DataROW00[Cedula]</td><td><b>Nombres:</b> $DataROW00[PrimerNombre] $DataROW00[SegundoNombre]</td><td><b>Apellidos:</b> $DataROW00[PrimerApellido] $DataROW00[SegundoApellido]</td></tr>
+
 </table>
 ";
 }

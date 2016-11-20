@@ -16,7 +16,7 @@ $data = $_POST["data"];
 	padding:6px;
 }
 .ActProducto:hover{
-	background-color:#0279C0;
+	background-color:#FF8015;
 	color:white;
 }
 .tabla-inventario th{

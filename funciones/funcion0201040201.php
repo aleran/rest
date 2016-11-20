@@ -17,7 +17,7 @@ $DataOrdenSQL02 = mysql_query($DataOrdenSQL02);
 <?php
 	echo " &nbsp;&nbsp;&nbsp;<b style='font-size:170%'>Mesa: $_POST[Data]</b> <button id='EnvioOrden'>Guardar</button>";
 ?>
-<button id="PlatoPersonalizado">Plato Personalizado</button>
+
 </div>
 <div id="OrMenuPrincipal"></div>
 <div id="OrdenarDiv"><b>Pedidos</b> <span id="cambios-deorden"></span><br>
@@ -65,7 +65,7 @@ $DataOrdenSQL02 = mysql_query($DataOrdenSQL02);
 .none-padding li:hover{
 	background-color: white;
 	padding: 1px;
-	border: 1px solid #004276;
+	border: 1px solid #FF841B;
 	border-radius: 5px;
 }
 .table-change{
@@ -77,12 +77,12 @@ $DataOrdenSQL02 = mysql_query($DataOrdenSQL02);
 	border-radius: 5px;
 	padding: 5px;
 	font-weight: bold;
-	color: #004276;
+	color: #FF841B;
 	cursor: default;
 }
 .table-change td:hover{
 	background: linear-gradient(#dbdbdb,white);
-	border-color: #0279C0;
+	border-color: #FF8015;
 }
 #OrdenarDiv{
 max-height:300px;
@@ -103,7 +103,7 @@ border-radius:50px;
 cursor:pointer;
 }
 .MenuBack:hover{
-border:2px solid #0279C0;
+border:2px solid #FF8015;
 background:linear-gradient(white,silver);
 }
 .MostrarSub{
@@ -123,7 +123,7 @@ border:1px solid silver;
 border-radius:5px;
 background:linear-gradient(white,#f0f0f0);
 padding:4px;
-color:#004276;
+color:#FF841B;
 font-weight:bold;
 cursor:pointer;
 margin: 5px 5px 5px -15px;
@@ -168,7 +168,7 @@ color:black;
 	padding: 3px;
 	width: 100%;
 	cursor: default;
-	color: #004276;
+	color: #FF841B;
 	font-weight: bold;
 }
 .hospan:hover{

@@ -88,7 +88,7 @@ $("#VerOrden").dialog({
 	border-radius: 4px;
 }
 #ActualizarEstado:focus{
-	border:1px solid #0279C0;
+	border:1px solid #FF8015;
 	box-shadow: 3px 3px 3px black;
 }
 #LoadAct{

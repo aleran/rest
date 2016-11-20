@@ -59,7 +59,7 @@ border-radius: 2px;
 #close:hover{
 	color:white;
 	background-color: #c00;
-	border-color: #0279C0;
+	border-color: #FF8015;
 }
 .SubOpcionesDeMenu{
 margin-left:25px;
@@ -77,7 +77,7 @@ border:1px solid silver;
 border-radius:5px;
 background:linear-gradient(white,#f0f0f0);
 padding:4px;
-color:#004276;
+color:#FF841B;
 font-weight:bold;
 cursor:pointer;
 margin: 5px 5px 5px -15px;

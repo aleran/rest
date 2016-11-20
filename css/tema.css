@@ -47,17 +47,17 @@ border-radius:5px;
 }
 #cabecera{
 
-background: url("../img/4.jpg") 0 0 no-repeat, url("../img/5.png") 45% no-repeat;
+background:  0 0 no-repeat, url("../img/pizzeria1.jpg") 45% no-repeat;
 
 /*background: url("../img/4d.png") 0 40% no-repeat, url("../img/5d.jpg") 45% no-repeat;*/
 background-size:10% 75%, 36% 100%;
 width:100%;
-height:10%;
+height:25%;
 border-top-left-radius:5px;
 border-top-right-radius:5px;
 }
 .tabFp{
-height:100%;
+height:80%;
 overflow: auto;
 }
 #tabs{
@@ -69,7 +69,7 @@ position:absolute;
 bottom:0;
 left:0;
 width:100%;
-height:9%;
+height:6%;
 border-top:1px solid silver;
 box-shadow: 6px -5px 8px 3px silver;
 padding:10px;
@@ -116,7 +116,7 @@ border-radius:5px;
 overflow:auto;
 }
 hr{
-/*background-color:#0279C0;*/
+/*background-color:#FF8015;*/
 background-color:silver;
 border:1px solid silver;
 border-radius:5px;
@@ -152,7 +152,7 @@ border-radius:3px;
 	border-radius:5px;
 }
 .titulos{
-color:#004276;
+color:#FF841B;
 }
 .usuarios-reg{
 border:1px solid silver;
@@ -163,7 +163,7 @@ cursor:default;
 }
 .usuarios-reg thead,.usuarios-reg tfoot{
 border:1px solid silver;
-background:linear-gradient(#0279C0,#0065B5);
+background:linear-gradient(#FF8015,#FF841B);
 border-top-right-radius:5px;
 border-top-left-radius:5px;
 color:white;
@@ -181,12 +181,12 @@ font-size:80%;
     from {background-color: white;
 		  color:black;
 		  }
-    to {background-color: #0279C0;
+    to {background-color: #FF8015;
 		color:white;
 		}
 }
 tr.user-color:hover{
-background-color: #0279C0;
+background-color: #FF8015;
 color:white;
 animation-name: op-css;
 animation-duration: 0.5s;
@@ -209,7 +209,7 @@ background:linear-gradient(white,silver);
 border-radius:50%;
 padding:5px 10px;
 display:inline-block;
-color:#0279C0;
+color:#FF8015;
 text-align:center;
 }
 .mod-user, .del-user{
@@ -225,10 +225,10 @@ background:linear-gradient(white,silver);
 #dialogform,#NuevoUsuario{ font-size: 75.5%; }
 .mod-usuario-form,.new-user{ display:block;}
 .capitalizar{text-transform: capitalize;}
-.title-mod-user,.new-user{font-weight:bold;color:#0065B5;}
+.title-mod-user,.new-user{font-weight:bold;color:#FF8015;}
 input.text { margin-bottom:12px; width:95%; padding: .4em}
-input:focus{border:1px solid #0279C0;}
-textarea:focus{border:1px solid #0279C0;}
+input:focus{border:1px solid #FF8015;}
+textarea:focus{border:1px solid #FF8015;}
 .next{padding:2px;}
 .iNext{border: 1px solid #A2A2A2;}
 fieldset.fielduser { padding:0; border:0; margin-top:25px; }
@@ -273,7 +273,7 @@ border:1px solid silver;
 border-radius:5px;
 }
 .usuario-datos td b{
-color:#0279C0;
+color:#FF8015;
 }
 .usuario-datos td{
 border:1px solid silver;
@@ -290,7 +290,7 @@ border:1px solid silver;
 border-radius:5px;
 }
 .nuevo-usuario-agg td b{
-color:#0279C0;
+color:#FF8015;
 }
 .table-rol{
 text-align:center;
