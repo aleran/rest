@@ -6,6 +6,9 @@ include("../config/config00.php");
 include("../config/config02.php");
 funcion00();
 $datetime = date("Y-m-d")." 00:00:00";
+
+//REVISAR PARA MODIFICACION {
+
 $SQL01 = "select * from data13 where FechaDePedido>'$datetime'";
 $SQL04 = "select * from data16 where FechaDePedido>'$datetime'";
 $SQL01 = mysql_query($SQL01);
@@ -23,7 +26,9 @@ while($ROW01 = mysql_fetch_array($SQL01)){
 	while ($ROW02 = mysql_fetch_array($SQL02)){
 		if($ROW02["Personalizado"]==0){
 			$iteraplato=$iteraplato+$ROW02["Cantidad"];
-			$recaudado+=($ROW02["Costo"]*$ROW02["Cantidad"]);
+			$recaudado+=($ROW02["Costo"]*$ROW02["Cantidad"]); 
+
+			//guardar total recaudado en un campo de la base de datos
 		}
 		if($ROW02["Personalizado"]!=0){
 			$SQL03 = "select * from data15 where IdPersolizado='$ROW02[IdPerCan]'";
@@ -36,7 +41,9 @@ while($ROW01 = mysql_fetch_array($SQL01)){
 	}
 	$iterator++;
 }
+//REVISAR PARA MODIFICACION }
 ?>
+
 <div class="title"><i class="dropdown icon"></i> Menú</div>
 <div class="content">
 	<p class="transition hidden">

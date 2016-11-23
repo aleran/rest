@@ -10,7 +10,7 @@ $Data03 = $_POST["Personalizados"];
 $Data04 = $_POST["NumeroPedidosPers"];
 
 $DataU01 = $_SESSION['idtbr'];
-$DataSQL00 = "insert into data13(IdOrden,Mesa,Estatus,UsuarioOrdena) values('$Data02','$Data00','3','$DataU01')";
+$DataSQL00 = "insert into data13(IdOrden,Mesa,Estatus,UsuarioOrdena) values('$Data02','$Data00','3','$DataU01')"; //agregar tipos de pago efectivo, debito y credito
 $DataSQL00 = mysql_query($DataSQL00);
 
 $DataSQL03 = "update data11 set EstadoActual='3',NumeroOrdenActivo='$Data02' where MesaNumero='$Data00' ";

@@ -78,7 +78,7 @@ if (array_key_exists("Data04", $_POST)) {
 	}
 }
 // echo $_POST["Data04"]."-".$_POST["Data00"]."-".$Data00;
-$DataSQL02 = "insert into data12(id,sub_id,Nombre,Nivel,Subniveles,Estado,Platillo,Costo,id_menu) value('$Data00','$DataSub00','$Data05','$Data01','$Data04','$Estado','$Data03','$Data06','$id_menu')";
+$DataSQL02 = "insert into data12(sub_id,Nombre,Nivel,Subniveles,Estado,Platillo,Costo,id_menu) value('$DataSub00','$Data05','$Data01','$Data04','$Estado','$Data03','$Data06','$id_menu')";
 mysql_query($DataSQL02) or die ("Error: ".mysql_error());
 
 $DataU01 = $_SESSION['idtbr'];
