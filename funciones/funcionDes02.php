@@ -49,10 +49,17 @@ else{
 	}
 	echo "</table>";
 	echo "<br><hr><p style='text-align:right'>Total: ".$DataResult." Bs.</p>
+		<input type='hidden' id='t2' value='".$DataResult."'>
 	<script>
 	var data = '$DataROW00[IdOrden]';
-	</script>
-	";
+	</script> 
+	";//total de orden arriba
+	echo"forma de pago:<br><br>";
+	echo"Efectivo<input type='text' name='efectivo' id='efectivo' class='calc' value='0'><br><br>";
+	echo"Debito<input type='text' name='debito' id='debito' class='calc' value='0'><br><br>";
+	echo"Credito<input type='text' name='credito' id='credito' class='calc' value='0'>";
+
+	
 }
 ?>
 <input type="hidden" id="data01" name="data01" value="<?php echo $Data;?> " />
@@ -66,15 +73,33 @@ else{
 <!-- </select> -->
 <div id="LoadAct"></div>
 </div>
+<script>
+			$(".calc").blur(function(){
+				var efec = parseInt($('#efectivo').val());
+		 		var deb = parseInt($('#debito').val());
+				var cre = parseInt($('#credito').val());
+				var total = efec+deb+cre;
+				console.log(total);
+				var tot2 = parseInt($('#t2').val());
+				console.log(tot2);
+				if (total < tot2) {
+					alert("falta dinero");
+				}
+				else if(total > tot2) {
+					alert("El pago del cliente es mayor al monto a cancelar");
+				}
+			})
+			
+		</script>";
 <script type="text/javascript">
 $("#VerMesa").dialog({
 	modal:true,
 	buttons:{
 		"Mesa Libre":function(){
-			DataString = "Data=5&&Data01="+$("#data01").val();
+			DataString = "Data=5&&Data01="+$("#data01").val()+"&&"+"efec="+$("#efectivo").val()+"&&"+"deb="+$("#debito").val()+"&&"+"cre="+$("#credito").val();
 			$.ajax({
 				type: "POST",
-				url: "funciones/funcion02010401.php",
+				url: "funciones/funcion02010401.php?",
 				data: DataString,
 				beforeSend:function(){
 					$("#LoadAct").html("<center><span style='color:green'>Cargando...</span></center>").slideDown(300);
@@ -139,7 +164,15 @@ $("#VerMesa").dialog({
 	}
 });
 $("#ActualizarEstado").val(Estado);
+	
+
 </script>
+<script>
+(function(){
+
+})
+</script>
+		
 <style type="text/css">
 #ActualizarEstado{
 	padding: 5px;

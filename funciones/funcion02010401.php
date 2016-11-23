@@ -4,6 +4,32 @@ include("../config/config02.php");
 funcion00();
 $Data = $_POST["Data"];
 $Data01 = $_POST["Data01"];
+if (isset($_POST["efec"])) {
+	$efectivo = $_POST["efec"];
+}
+else {
+	$efectivo = 0;
+	
+}
+if (isset($_POST["deb"])) {
+	$debito = $_POST["deb"];
+}
+else {
+	$debito = 0;
+	
+}
+if (isset($_POST["cre"])) {
+	$credito = $_POST["cre"];
+}
+else {
+	$credito = 0;
+	
+}
+echo "<script>
+		console.log(".$efectivo.");
+		console.log(".$debito.");
+		console.log(".$credito.");
+	</script>";
 
 $NewData = "";
 if($Data=="5"){
