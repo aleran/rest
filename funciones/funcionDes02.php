@@ -79,8 +79,8 @@ else{
 		display: none;
 	}
 	#falta {
-		color:red#FF0000;
-		font-size: 40px;
+		color:red#F00505;
+		font-size: 30px;
 	}
 </style>
 <script>
@@ -100,7 +100,7 @@ else{
 				var tot2 = parseInt($('#t2').val());
 				console.log(tot2);
 				if (total < tot2) {
-					$("#falta").html("Falta dinero!!"tot2);
+					$("#falta").text("Falta dinero!!");
 					$(".ui-button-text-only").addClass("hidden");
 				}
 				if(total > tot2) {
