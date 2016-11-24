@@ -54,10 +54,11 @@ else{
 	var data = '$DataROW00[IdOrden]';
 	</script> 
 	";//total de orden arriba
-	echo"forma de pago:<br><br>";
-	echo"Efectivo<input type='text' name='efectivo' id='efectivo' class='calc' value='0'><br><br>";
-	echo"Debito<input type='text' name='debito' id='debito' class='calc' value='0'><br><br>";
-	echo"Credito<input type='text' name='credito' id='credito' class='calc' value='0'>";
+	echo"<b>Forma de pago:</b><br><br>";
+	echo"Efectivo<input type='number' name='efectivo' id='efectivo' class='calc' value='0'>Bs.<br><br>";
+	echo"Debito<input type='number' name='debito' id='debito' class='calc' value='0'> Bs.<br><br>";
+	echo"Credito<input type='number' name='credito' id='credito' class='calc' value='0'> Bs.";
+	echo"<br><br><span id='falta'></span>";
 
 	
 }
@@ -73,8 +74,24 @@ else{
 <!-- </select> -->
 <div id="LoadAct"></div>
 </div>
+<style>
+	.hidden {
+		display: none;
+	}
+	#falta {
+		color:red#FF0000;
+		font-size: 40px;
+	}
+</style>
 <script>
-			$(".calc").blur(function(){
+
+
+		
+
+		
+
+			
+			$(".calc").keyup(function(){
 				var efec = parseInt($('#efectivo').val());
 		 		var deb = parseInt($('#debito').val());
 				var cre = parseInt($('#credito').val());
@@ -83,10 +100,17 @@ else{
 				var tot2 = parseInt($('#t2').val());
 				console.log(tot2);
 				if (total < tot2) {
-					alert("falta dinero");
+					$("#falta").html("Falta dinero!!"tot2);
+					$(".ui-button-text-only").addClass("hidden");
 				}
-				else if(total > tot2) {
-					alert("El pago del cliente es mayor al monto a cancelar");
+				if(total > tot2) {
+					$("#falta").html("El pago del cliente es mayor al monto a cancelar");
+					$(".ui-button-text-only").addClass("hidden");
+				}
+				if(total == tot2) {
+					$("#falta").html("");
+					$(".ui-button-text-only").removeClass("hidden");
+
 				}
 			})
 			
@@ -168,9 +192,7 @@ $("#ActualizarEstado").val(Estado);
 
 </script>
 <script>
-(function(){
-
-})
+	$(".ui-button-text-only").addClass("hidden");
 </script>
 		
 <style type="text/css">

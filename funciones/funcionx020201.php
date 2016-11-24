@@ -11,6 +11,8 @@ $dataD01 = funcion0402($data01)." 23:59:59";
 $datetime = date("Y-m-d")." 00:00:00";
 $SQL01 = "select * from data13 where FechaDePedido>='$dataD00' and FechaDePedido<'$dataD01'";
 $SQL04 = "select * from data16 where FechaDePedido>='$dataD00' and FechaDePedido<'$dataD01'";
+$result = mysql_query("SELECT SUM(efectivo) as totale, SUM(debito) as totald, SUM(credito) as totalc FROM data13 WHERE FechaDePedido>='$dataD00' and FechaDePedido<'$dataD01'");	
+$row = mysql_fetch_array($result, MYSQL_ASSOC);
 
 $SQL01 = mysql_query($SQL01);
 $SQL04 = mysql_query($SQL04);
@@ -46,6 +48,9 @@ while($ROW01 = mysql_fetch_array($SQL01)){
 Ordenes atendidas: <?php echo $iterator; ?><br>
 Platos despachados: <?php echo $iteraplato; ?><br>
 Ordenes Cancelados/Borradas: <?php echo $cancdele; ?> <br>
+Total Efectivo: <?php echo $row["totale"]; ?> <br>
+Total Credito: <?php echo $row["totald"]; ?> <br>
+Total Debito: <?php echo $row["totalc"]; ?> <br>
 Recaudado: <?php echo $recaudado; ?> Bs.<br>
 <h4><u><li>Inventario</li></u></h4>
 <h5><u>Nuevos productos ingresado</u></h5>

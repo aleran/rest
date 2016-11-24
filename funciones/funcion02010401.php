@@ -41,7 +41,7 @@ $SQL00 = "select * from data11 where MesaNumero='$Data01' ";
 $SQL00 = mysql_query($SQL00);
 $ROW00 = mysql_fetch_object($SQL00);
 
-$ordenupdate = "update data13 set Estatus='$Data' where IdOrden='$ROW00->NumeroOrdenActivo'";
+$ordenupdate = "update data13 set Estatus='$Data', efectivo='$efectivo', debito='$debito', credito='$credito' where IdOrden='$ROW00->NumeroOrdenActivo'";
 mysql_query($ordenupdate);
 
 $DataSQL00 = "update data11 set EstadoActual='$Data'$NewData where MesaNumero='$Data01'";

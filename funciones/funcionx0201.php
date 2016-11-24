@@ -20,6 +20,13 @@ $cancdele=0;
 while($ROW04 = mysql_fetch_array($SQL04)){
 	$cancdele++;
 }
+$result = mysql_query("SELECT SUM(efectivo) as totale, SUM(debito) as totald, SUM(credito) as totalc FROM data13 WHERE FechaDePedido>'$datetime'");	
+$row = mysql_fetch_array($result, MYSQL_ASSOC);
+echo "<script>
+		console.log(".$row["totale"].");
+		console.log(".$row["totald"].");
+		console.log(".$row["totalc"].");
+	</script>";
 while($ROW01 = mysql_fetch_array($SQL01)){
 	$SQL02 = "select * from data14 where Orden='$ROW01[IdOrden]'";
 	$SQL02 = mysql_query($SQL02);
@@ -51,6 +58,9 @@ while($ROW01 = mysql_fetch_array($SQL01)){
 			<tr><td class="data-table-rep">Ordenes atendidas:</td><td><?php echo $iterator; ?></td></tr>
 			<tr><td class="data-table-rep">Platos despachados:</td><td><?php echo $iteraplato; ?></td></tr>
 			<tr><td class="data-table-rep">Ordenes Cancelados/Borradas:</td><td><?php echo $cancdele; ?></td></tr>
+			<tr><td class="data-table-rep">Total Efectivo:</td><td><?php echo $row["totale"]; ?> Bs.</td></tr>
+			<tr><td class="data-table-rep">Total Debito:</td><td><?php echo $row["totald"]; ?> Bs.</td></tr>
+			<tr><td class="data-table-rep">Total Credito:</td><td><?php echo $row["totalc"]; ?> Bs.</td></tr>
 			<tr><td class="data-table-rep">Recaudado:</td><td><?php echo $recaudado; ?> Bs.</td></tr>
 		</table>
 	</p>
